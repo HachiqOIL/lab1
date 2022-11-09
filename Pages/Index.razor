@@ -1,0 +1,14 @@
+﻿@page "/"
+
+<p>
+    Enter your name:
+    <input @bind="username" />
+    <input type="submit" value="Submit" />
+</p>
+<p>
+    Hello @username
+</p>
+
+@code {
+    private string? username;
+}
